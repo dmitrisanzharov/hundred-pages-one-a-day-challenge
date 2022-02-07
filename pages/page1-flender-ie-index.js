@@ -366,11 +366,11 @@ const Page1FlenderIEIndex = () => {
 									ribbonImage:
 										"https://flender.ie/assets/project-g-funded-04494f1a3365f6df322da18c79f8c8850c4e7b5356c523c797d874392b033ca2.png",
 									ribbonType: "green",
-									mainName: "Bear Sporting Events Ltd P...",
-									subName: "Bear Sporting Events Limited",
-									interestOffered: 8.85,
-									loanGrade: "B",
-									totalAmount: 53500,
+									mainName: "Halpin Complete Construc...",
+									subName: "Halpin Complete Ltd.",
+									interestOffered: 10.95,
+									loanGrade: "C+",
+									totalAmount: 32000,
 									durationInMonths: 18,
 								}}
 							/>
@@ -380,16 +380,16 @@ const Page1FlenderIEIndex = () => {
 							<Page1MarketPlaceCard
 								obj={{
 									image:
-										"https://s3.eu-west-1.amazonaws.com/flender.avatar/uploads/campaign/avatar/5727/ea5e673d-0eff-4e45-ae46-61f3d818c40b.png",
+										"https://s3.eu-west-1.amazonaws.com/flender.avatar/uploads/campaign/avatar/5666/a866b9c7-a426-4d4e-ae0b-941a16a0e640.png",
 									ribbonImage:
 										"https://flender.ie/assets/funded-b47ebd154ec920ff1963d5e99dffee5b436edbfffb6e466fa7acb8bfcc12cfed.png",
 									ribbonType: "funded",
-									mainName: "Bear Sporting Events Ltd P...",
-									subName: "Bear Sporting Events Limited",
+									mainName: "Laurel Lodge Nursing Home",
+									subName: "Laurel Lodge Nursing Home Ltd",
 									interestOffered: 8.85,
 									loanGrade: "B",
-									totalAmount: 53500,
-									durationInMonths: 18,
+									totalAmount: 60000,
+									durationInMonths: 36,
 								}}
 							/>
 						</div>
