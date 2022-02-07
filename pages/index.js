@@ -18,8 +18,8 @@ export default function Home() {
 				}}
 			/>
 
-			<div className="totalProjectWrapper p-5">
-				<h1>One page per day projects</h1>
+			<div className="totalProjectWrapper p-4 p-sm-5">
+				<h1 className='tableOfContentHeader'>One page per day projects</h1>
 				<br />
 				{allProjects.map((value, index) => {
 					const { name, difficulty, technology } = value;
@@ -27,38 +27,38 @@ export default function Home() {
 						<div key={index}>
 							<hr />
 							<div className="d-flex flex-wrap">
-
-            <Link href='/page1-flender-ie-index'>
-              <a target='_blank'>
-              <div
-									className="tableOfContentImageWrap"
+								{/* image box1 */}
+								<Link href="/page1-flender-ie-index">
+									<a target="_blank">
+										<div className="tableOfContentImageWrap mb-1">
+											<Image
+												src="/images/page1-flender-index/page1-flender-index.png"
+												layout="fill"
+												alt=""
+											/>
+										</div>
+									</a>
+								</Link>
+								{/* project info box */}
+								<div
+									className="ps-sm-3 pt-3 pt-sm-0"
+									style={{ maxWidth: "320px" }}
 								>
-									<Image
-										src="/images/page1-flender-index/page1-flender-index.png"
-                    layout='fill'
-										alt=""
-									/>
-                  
-								</div>
-                </a>
-                </Link>
-
-								<div className="ps-3" style={{maxWidth: '320px'}}>
-                <div  className='pt-2'>
-										<strong>Page number:</strong> {index+1}
+									<div className="">
+										<strong>Page number:</strong> {index + 1}
 									</div>
-									<div  className='pt-2'>
+									<div className="pt-2">
 										<strong>Name:</strong> {name}
 									</div>
-									<div  className='pt-2'>
+									<div className="pt-2">
 										<strong>Difficulty: </strong>
 										{difficulty}
-									</div >
-									<div className='pt-2'>
+									</div>
+									<div className="pt-2">
 										<strong>Technology: </strong>
 										{technology}
 									</div>
-									<div  className='pt-2'>
+									<div className="pt-2">
 										<strong>Demo link: </strong>
 										<Link href="/page1-flender-ie-index">
 											<a target="_blank">

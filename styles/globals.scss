@@ -53,6 +53,19 @@
 	cursor: pointer;
 }
 
+@media all and (max-width: 325px){
+	.tableOfContentHeader{
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 414px){
+	.tableOfContentImageWrap{
+		width: 256px;
+		height: 192px;
+	}
+}
+
 //********************************************************************
 //          PAGE 1
 // *******************************************************************
