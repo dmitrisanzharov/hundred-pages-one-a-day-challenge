@@ -96,43 +96,17 @@ const Page1FlenderIEIndex = () => {
 								</a>
 							</li>
 
-							<li
-								className="nav-item  ms-lg-2 dropdown"
-								onClick={() => setActiveName("About")}
-							>
-								<a
-									className={`nav-link dropdown-toggle ${
-										activeName === "About" && "active"
-									}`}
-									href="#"
-									id="navbarDropdown"
-									role="button"
-									data-bs-toggle="dropdown"
-									aria-expanded="false"
-								>
-									About
-								</a>
-								<ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-									<li>
-										<a className="dropdown-item" href="#">
-											Mission
-										</a>
-									</li>
-									<li>
-										<a className="dropdown-item" href="#">
-											Team
-										</a>
-									</li>
-									<li>
-										<hr className="dropdown-divider" />
-									</li>
-									<li>
-										<a className="dropdown-item" href="#">
-											Faq
-										</a>
-									</li>
-								</ul>
-							</li>
+							<li className="nav-item dropdown" onClick={()=> setActiveName('About')}>
+          <a className={`nav-link dropdown-toggle`} href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </a>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a className="dropdown-item" href="#">Mission</a></li>
+            <li><a className="dropdown-item" href="#">Team</a></li>
+            <li><hr className="dropdown-divider" /></li>
+            <li><a className="dropdown-item" href="#">FAQ</a></li>
+          </ul>
+        </li>
 							<li
 								className="nav-item ms-lg-2 "
 								onClick={() => setActiveName("Contact")}
@@ -179,7 +153,7 @@ const Page1FlenderIEIndex = () => {
 							<span>
 								Flender - Fast Flexible Finance is delighted to announce the
 								official launch of Project Green. This campaign focuses on
-								'Rebooting Irish SMEs' and working alongside our SME community
+								&apos;Rebooting Irish SMEs&apos; and working alongside our SME community
 								to assist in their ongoing efforts to reopen smoothly after
 								Covid 19 restrictions.{" "}
 							</span>
@@ -756,7 +730,7 @@ const Page1FlenderIEIndex = () => {
 									style={{ maxWidth: "280px" }}
 								>
 									Your data is safe and checking your eligibility for a Flender
-									loan won't affect your credit score
+									loan won&apos;t affect your credit score
 								</div>
 							</div>
 						</div>

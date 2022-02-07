@@ -46,6 +46,13 @@
 		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
 }
 
+.tableOfContentImageWrap{
+	position: relative;
+	width: 320px;
+	height: 240px;
+	cursor: pointer;
+}
+
 //********************************************************************
 //          PAGE 1
 // *******************************************************************
@@ -787,7 +794,24 @@ $page1-flender-green-color: #22d3c5;
 		url("https://flender.ie/assets/testimony-hirelab-42cdc4a1831f547a5a7da6fefee2bf5e27c6b0da0d168174a7d4897f88850d3f.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center right;
+	background-position: 0% 30%;
+}
+
+@media all and (max-width: 992px){
+	.page1-refImg1::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 65%;
+		width: 120%;
+		z-index: -1;
+		background-image:
+			url("https://flender.ie/assets/testimony-hirelab-42cdc4a1831f547a5a7da6fefee2bf5e27c6b0da0d168174a7d4897f88850d3f.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 90% 30%;
+	}
 }
 
 .page1-refImg2::before{

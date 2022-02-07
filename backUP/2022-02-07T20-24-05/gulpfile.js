@@ -22,7 +22,9 @@ gulp.task("backUpComponents", (done) => {
 });
 
 gulp.task("backUpFunctions", (done) => {
-	gulp.src("./functions/**/*").pipe(gulp.dest(`backUP/${dateAndTime}/functions`));
+	gulp
+		.src("./functions/**/*")
+		.pipe(gulp.dest(`backUP/${dateAndTime}/functions`));
 	done();
 });
 
@@ -56,6 +58,6 @@ gulp.task(
 		"backUpStylesSASS",
 		"backUpUseContext",
 		"backUpPublic",
-		'backUpUseAllJsInRoot'
+		"backUpUseAllJsInRoot"
 	)
 );
