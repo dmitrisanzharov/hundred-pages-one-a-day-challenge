@@ -1,0 +1,1 @@
+console.log('BOOM, wud up, solo renekton only');

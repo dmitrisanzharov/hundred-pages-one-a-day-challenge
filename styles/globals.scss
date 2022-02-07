@@ -1,0 +1,975 @@
+//********************************************************************
+//          General notes
+// *******************************************************************
+
+// Naming conventions are   page1-navButton;  page1-start-text
+
+//********************************************************************
+//          STYLES
+// *******************************************************************
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+//********************************************************************
+//          MY DEFAULT IMPORTS
+// *******************************************************************
+
+.drr {
+	border: 2px solid red;
+}
+
+.dbb {
+	border: 2px solid blue;
+}
+
+.dgg {
+	border: 2px solid green;
+}
+
+.ddd {
+	border: 2px solid black;
+}
+
+.shadow-dreamy {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+		0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.shadow-dreamy-no-hover {
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15), 0 2px 2px rgba(0, 0, 0, 0.15),
+		0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.15);
+}
+
+.shadow-dreamy:hover {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+		0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+		0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.tableOfContentImageWrap{
+	position: relative;
+	width: 320px;
+	height: 240px;
+	cursor: pointer;
+}
+
+//********************************************************************
+//          PAGE 1
+// *******************************************************************
+
+$page1-flender-blue-color: #003b71;
+$page1-flender-green-color: #22d3c5;
+
+.page1-flenderLogo {
+	color: yellow;
+	background: linear-gradient(
+		45deg,
+		$page1-flender-blue-color,
+		$page1-flender-green-color
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+
+	font-size: 40px;
+	font-weight: 600;
+	font-family: "Lato", sans-serif;
+}
+
+#navBarFinlendersPage1 {
+	background-color: white !important;
+}
+
+.page1-getStartedButton {
+	border: 2px solid $page1-flender-green-color;
+	border-radius: 5px;
+
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #002f69;
+
+	cursor: pointer;
+}
+
+.page1-LoginText:hover {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #002f69;
+}
+
+.page1-LoginText:hover {
+	color: #00d1c1 !important;
+	cursor: pointer;
+}
+
+.page1-businessMeetingBackground:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient(115deg, rgba(black, 0.6), rgba(black, 0.2)),
+		url("https://www.incimages.com/uploaded_files/image/1920x1080/getty_473909426_129584.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.page1-flenderHereToHelpExpandText {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 32px;
+	color: #fffaf0;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.page1-flenderHereToHelpExpandText {
+		font-size: 48px;
+		line-height: 48px;
+	}
+}
+
+@media (min-width: 769px) {
+	.page1-flenderHereToHelpExpandText {
+		font-size: 38px;
+		line-height: 38px;
+	}
+}
+
+.page1-greenBtn {
+	background: #00d1c1;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	width: fit-content;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.page1-greenBtn:hover {
+	background: #00c1b3;
+}
+
+.page1-blueNewsBox {
+	background: #0077c8;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.page1-newsIconAndText {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.page1-miniLearnMoreButton {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 12px;
+	color: #ffffff;
+	background: #00d1c1;
+	border-radius: 5px;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.page1-5tickBoxes {
+	background: linear-gradient(
+		45deg,
+		$page1-flender-blue-color,
+		$page1-flender-green-color
+	);
+	color: white;
+}
+
+.page1-tickBoxHolder {
+	width: 170px;
+	width: 170px;
+}
+
+.page1-tickBoxText {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #ffffff;
+}
+
+@media all and (min-width: 768px) {
+	.page1-tickBoxHolder {
+		min-width: 140px;
+		min-height: 60px;
+	}
+}
+
+@media all and (min-width: 1400px) {
+	.page1-tickBoxHolder {
+		min-width: 240px;
+		min-height: 60px;
+	}
+	.page1-tickBoxText {
+		font-size: 18px;
+		line-height: 22px;
+	}
+}
+
+.page1-HowWillYouUseYourFlenderLoanContainer {
+	max-width: 700px;
+}
+
+.page1-HowWillYouUseYourFlenderLoanH1Text {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002f69;
+}
+
+.page1-HowWillYouUseYourFlenderLoanFastDecisionText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 29px;
+	color: #002f69;
+}
+
+.page1-HowWillYouUseYourFlenderLoanBulletText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #002f69;
+}
+
+@media all and (min-width: 426px) {
+	.page1-HowWillYouUseYourFlenderLoanBulletText {
+		font-size: 21px;
+		line-height: 32px;
+	}
+}
+
+.page1-HowWillYouUseYourFlenderLoanButton {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: #ffffff;
+	border-radius: 5px;
+	background: #00d1c1;
+}
+
+.page1-HowWillYouUseYourFlenderLoanButton:hover {
+	background: #00c1b3;
+}
+
+.page1-bigRedImageParentContainer {
+	position: relative;
+	height: 690px;
+}
+
+.page1-bigRedImageDivWrapper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image: linear-gradient(115deg, rgba(black, 0.1), rgba(black, 0.1)),
+		url("https://flender.ie/assets/borrower-testimony-87a388d722cfbd032543a438e9b3bb8d5a95a127d2fc0fd3f60dce6118655180.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+@media (max-width: 475px){
+	.page1-bigRedImageDivWrapper:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-image: linear-gradient(115deg, rgba(black, 0.1), rgba(black, 0.1)),
+			url("https://flender.ie/assets/borrower-testimony-87a388d722cfbd032543a438e9b3bb8d5a95a127d2fc0fd3f60dce6118655180.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 43% 50%;
+	}
+}
+
+
+@media (min-width: 577px) and (max-width: 1000px) {
+	.page1-bigRedImageDivWrapper:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background-image: linear-gradient(
+				115deg,
+				rgba(black, 0.4),
+				rgba(black, 0.4)
+			),
+			url("https://flender.ie/assets/borrower-testimony-87a388d722cfbd032543a438e9b3bb8d5a95a127d2fc0fd3f60dce6118655180.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+
+
+
+.page1-bigRedImageBottomPageTextDiv {
+	position: absolute;
+	height: 240px;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+}
+
+.page1-bigRedImageBottomPageQuoteTextStyle {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 21px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.page1-bigRedImageBottomPageReferenceTextStyle {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+@media all and (min-width: 375px) {
+	.page1-bigRedImageBottomPageQuoteTextStyle {
+		font-size: 24px;
+	}
+}
+
+@media all and (min-width: 577px) {
+	.page1-bigRedImageBottomPageTextDiv {
+		display: none !important;
+	}
+}
+
+.page1-bigRedDivThatAppears {
+	width: 445px;
+	text-align: end;
+	position: absolute;
+	bottom: 163px;
+	right: 125px;
+	display: none;
+}
+
+.page1-bigRedDivThatAppearsQuote {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.page1-bigRedDivThatAppearsReference {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+@media all and (min-width: 577px) {
+	.page1-bigRedDivThatAppears {
+		display: block;
+	}
+}
+
+.page1-MarketPlaceHeaderText {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002f69;
+}
+
+.page1-cardWrapper {
+	cursor: pointer;
+	width: 100%;
+	position: relative;
+}
+
+@media all and (min-width: 375px) {
+	.page1-cardWrapper {
+		min-width: 375px;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.page1-cardWrapper {
+		min-width: 290px;
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.page1-cardWrapper {
+		min-width: 350px;
+	}
+}
+
+.page1-cardWrapper-ribbonHolderFunded {
+	position: absolute;
+	top: -18px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page1-cardWrapper-ribbonHolderGreen {
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.page1-cardWrapper-imageHolder {
+	position: relative;
+	width: 100%;
+	height: 205px;
+}
+
+@media all and (min-width: 375px) {
+	.page1-cardWrapper-imageHolder {
+		height: 237px;
+	}
+}
+
+@media all and (min-width: 1024px) {
+	.page1-cardWrapper-imageHolder {
+		height: 185px;
+	}
+}
+
+@media all and (min-width: 1440px) {
+	.page1-cardWrapper-imageHolder {
+		height: 225px;
+	}
+}
+
+.page1-cardWrapper-mainName {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 25px;
+	color: #4a4a4a;
+}
+
+.page1-cardWrapper-subName {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	color: #999999;
+}
+
+.page1-interestOfferedAndLoanGradeText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #4a4a4a;
+}
+
+.page1-interestNumberText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: #00d1c1;
+}
+
+.page1-gradeDiv {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+}
+
+.page1-theLine {
+	background: linear-gradient(
+		45deg,
+		$page1-flender-blue-color,
+		$page1-flender-green-color
+	);
+	height: 10px;
+}
+
+.page1-100pcText {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: #002f69;
+}
+
+.page1-fundedTextCardBottom {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color: #4a4a4a;
+}
+
+.page1-totalAmountCardBottomText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 45px;
+	color: #4a4a4a;
+}
+
+.page1-overDurationCardBottomText {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color: #4a4a4a;
+	margin-top: -5px;
+}
+
+.page1-moreInvOppsText {
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	color: #007bff;
+	cursor: pointer;
+}
+
+.page1-moreInvOppsText:hover {
+	color: #0077c8;
+}
+
+
+.page1-redDudeImageBoxHolder:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background-image:
+		url("https://flender.ie/assets/jamie-home-hero-bebdeca46136aac0c8910a13abf1f7822bef1bad70058a3211a6e961ec026e58.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+.page1-redDudeHeading1{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 64px;
+	line-height: 77px;
+	color: white;
+}
+
+.page1-redDudeHeading2{
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-size: 42px;
+	line-height: 50px;
+	color: white;
+}
+
+.page1-redDudeButton{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+	color: white;
+	background: #002f69;
+	cursor: pointer;
+	transition: .5s; 
+	width: fit-content;
+	border-radius: 5px;
+}
+
+.page1-redDudeButton:hover{
+	background: #007bff;
+}
+
+.page1-flenderStatsBottomText{
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+}
+
+.page1-flenderStatsDiv{
+	width: 100%; 
+	height: 100%;
+	background: linear-gradient(
+		45deg,
+		#012F69,
+		#FB0160
+	);
+}
+
+.page1-flenderStatsTopText{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #ffffff;
+}
+
+.page1-flenderStatsBottomText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #fffaf0;
+}
+
+.page1-flenderStatInfoIcon{
+	color: #ffffff;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.page1-flenderStatInfoIcon:hover{
+	color: #00d1c1;
+}
+
+.page1-flenderStatsInfoBox{
+	position: absolute;
+	top: -150px;
+	left: 40%;
+	height: 135px;
+	width: 210px;
+	background: rgba(#146cbe, 0.9);
+	border-radius: 10px;
+	border: none;
+	z-index: 10;
+	opacity: 0; 
+	transition: .5s; 
+}
+
+@media all and (max-width: 375px){
+	.page1-flenderStatsInfoBox{
+		left: 20%; 
+	}
+}
+
+.page1-flenderStatsLittleArrow{
+	background: rgba(#146cbe, 0.9);
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	left: 100px;
+	bottom: -5px;
+	z-index: -10; 
+	transform: rotate(45deg);
+}
+
+.page1-flenderStatsInfoBoxText{
+	color: #ffffff;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.page1-flenderStatInfoIcon:hover .page1-flenderStatsInfoBox {
+	opacity: 1; 
+}
+
+.page1-whatIsDigital{
+	background: #eeeeee;
+}
+
+.page1-whatIsDigitalHeading{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002f69;
+}
+
+.page1-whatIsDigitalText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+	line-height: 29px;
+	color: #002f69;
+}
+
+.page1-advantageOfFlendersWrapperDiv{
+	background: #002f69; 
+}
+
+.page1-advantageOfFlendersHeading{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #ffffff;
+}
+
+.page1-advantageOfFlendersTextMain{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #ffffff;
+}
+
+.page1-advantageOfFlendersText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	color: #ffffff;
+}
+
+.page1-advantageOfFlendersLI{
+	list-style-image: url('../public/images/page1-flender-index/page1FlendersTickImage.png');
+}
+
+@media all and (max-width: 425px){
+	.page1-advantageOfFlendersText{
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+.page1-refBoxes{
+	position: relative;
+	min-height: 350px+290px;
+	max-height: 752px;
+	overflow: hidden;
+}
+
+.page1-refImg1::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 65%;
+	width: 120%;
+	z-index: -1;
+	background-image:
+		url("https://flender.ie/assets/testimony-hirelab-42cdc4a1831f547a5a7da6fefee2bf5e27c6b0da0d168174a7d4897f88850d3f.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 30%;
+}
+
+@media all and (max-width: 992px){
+	.page1-refImg1::before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 65%;
+		width: 120%;
+		z-index: -1;
+		background-image:
+			url("https://flender.ie/assets/testimony-hirelab-42cdc4a1831f547a5a7da6fefee2bf5e27c6b0da0d168174a7d4897f88850d3f.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 90% 30%;
+	}
+}
+
+.page1-refImg2::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 65%;
+	width: 120%;
+	z-index: -1;
+	background-image:
+		url("https://flender.ie/assets/arctic-stone-testimony-af3544d4d7ade24b6a9986f3ba15124968cce4084f8fea6c2c6e8a4bf105076d.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+
+.page1-regGreenBox{
+	background: #00D1C1;
+	position: absolute; 
+	bottom: 0;
+	height: 230px;
+}
+
+.page1-refQuoteText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 26px;
+	color: #ffffff;
+}
+
+.page1-refReferenceText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26px;
+	color: #ffffff;
+}
+
+@media all and (min-width: 577px){
+	.page1-refQuoteText{
+		font-size: 16px;
+	}
+
+	.page1-refReferenceText{
+		font-size: 15px;
+	}
+}
+
+
+.page1-awardsHeader{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 38px;
+	color: #002f69;
+}
+
+.page1-awardsImgWrapper{
+	position: relative;
+	width: 445px;
+	height: 156px;
+	opacity: 0.7;
+}
+
+.page1-awardsImgWrapper:hover{
+	opacity: 1;
+}
+
+@media all and (max-width: 475px){
+	.page1-awardsImgWrapper{
+		height: 95px;
+		width: 270px;
+	}
+}
+
+
+.page1-secureSafeWrapper{
+	background: #eeeeee;
+}
+
+.page1-secureSafeHeadingText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 45px;
+	color: #002f69;
+}
+
+.page1-secureSafeText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #002f69;
+}
+
+.page1-inMediaDiv{
+	background: #002F69;
+}
+
+.page1-inMediaHeader{
+	font-family: "Lato", sans-serif;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
+	color: #dddddd;
+}
+
+.page1-inMediaImageHolder{
+	opacity: .3;
+	cursor: pointer;
+	width: 220px;
+	height: 180px;
+}
+
+.page1-inMediaImageHolder:hover{
+	opacity: 1;
+}
+
+.page1-footerText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #999999;
+}
+
+.page1-footerLink{
+	@extend .page1-footerText;
+	color: #0077c8;
+	cursor: pointer;
+}
+
+.page1-footerNavText{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color: #999999;
+	cursor: pointer;
+}
+
+.page1-footerNavText:hover{
+	color: #00d1c1;
+}
+
+.page1-footerNavWrapperLargeScreen{
+	display: none;
+}
+
+@media all and (min-width: 586px){
+	.page1-footerNavWrapperLargeScreen{
+		display: block;
+	}
+	.page1-footerNavWrapSmall{
+		display: none;
+	}
+}
+
