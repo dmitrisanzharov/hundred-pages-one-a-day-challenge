@@ -682,7 +682,7 @@ const Page1FlenderIEIndex = () => {
 						</div>
 						<div className="page1-awardsImgWrapper  mt-4 my-lg-0">
 							<Image
-								src="https://flender.ie/assets/ecommerce_award-25da97d01c409a4796fd31d618e5d8a8c262de3bb49088961e94e7a85626ccf6.png "
+								src="https://flender.ie/assets/ecommerce_award-25da97d01c409a4796fd31d618e5d8a8c262de3bb49088961e94e7a85626ccf6.png"
 								layout="fill"
 								alt=""
 							/>
